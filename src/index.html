@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List - Beautiful Task Management</title>
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/components.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+</head>
+<body>
+  <div id="app" class="app-container">
+    <header class="header">
+      <h1 class="title">My Tasks</h1>
+      <div class="task-counter">
+        <span id="counter" class="counter">0 active, 0 completed</span>
+      </div>
+    </header>
+    
+    <main class="main">
+      <div class="add-task-container">
+        <input 
+          type="text" 
+          id="new-task-input" 
+          class="task-input" 
+          placeholder="What needs to be done?"
+          aria-label="New task input"
+          autocomplete="off"
+        />
+        <button 
+          id="add-task-btn" 
+          class="add-btn" 
+          aria-label="Add task"
+        >
+          Add
+        </button>
+      </div>
+      
+      <div id="empty-state" class="empty-state">
+        <p class="empty-message">No tasks yet. Add one above to get started!</p>
+      </div>
+      
+      <ul id="task-list" class="task-list" role="list" aria-label="Tasks">
+      </ul>
+    </main>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: var(--transform-slide-in);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%); /* TODO: Add slide-out transform token */
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
